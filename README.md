@@ -3,6 +3,8 @@ HakoEve の WEB 開発環境を「Immutable Infrastructure（不変のインフ�
 HakoEve Web 開発環境の構築
 --------------------------
 
+**初回起動時はプルやビルドをするので時間がかかる**
+
 1. [Docker for Mac](https://docs.docker.com/docker-for-mac/) をインストール
 - Docker for Mac を起動
 - master ブランチをクローン
