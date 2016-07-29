@@ -1,4 +1,4 @@
-HakoEve の WEB 開発環境を「Immutable Infrastructure（不変のインフラ）」化させるために、hakoeve の debug ブランチを元に作成した。新規のリポジトリを作成した理由としてし、debug ブランチの app/webroot/img のファイルが一部おかしかったので、そこを修正した状態で新たにリポジトリを作成する必要があったから。
+HakoEve の WEB 開発環境を「Immutable Infrastructure（不変のインフラ）」化させるために、hakoeve の debug ブランチを元にこのリポジトリを作成した。新規のリポジトリを作成した理由としてし、debug ブランチの app/webroot/img のファイルが一部おかしかったので、そこを修正した状態で新たにリポジトリを作成する必要があったから。
 
 HakoEve Web 開発環境の構築
 --------------------------
