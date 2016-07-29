@@ -1,0 +1,33 @@
+.venue_manage {
+	margin-left: auto;
+	width: 690px;
+	margin-top: 30px;
+}
+
+.venue_data {
+	font-size: 17px;
+
+}
+
+.venue_data td{
+	background-color: #fff;
+	border-bottom: dotted 1px #000;
+}
+
+.venue_add {
+	margin-left: auto;
+	width: 690px;
+	margin-top: 30px;
+}
+
+.venue_add label{
+	font-size: 17px;
+}
+
+.venue_add input{
+	font-size: 17px;
+}
+
+.venue_edit input{
+	font-size: 17px;
+}

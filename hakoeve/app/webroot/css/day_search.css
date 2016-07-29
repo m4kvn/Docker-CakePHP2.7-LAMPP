@@ -1,0 +1,123 @@
+#day_area {
+	width: 930px;
+	height: 400px;
+	margin: 0 auto;
+	padding: 0 10px;
+	background-color: #f7f8f8;
+}
+
+
+#day_calender {
+	width: 420px;
+
+	margin: 0 auto ;
+	/*right: 50px;*/
+	padding: 0 60px 0 50px;
+	background-color: #f7f8f8;
+	display: inline-block;
+	color: #000;
+	vertical-align: top;
+}
+
+.day_calender_title{
+	width: 420px;
+	height: 50px;
+	padding: 0;
+	margin: 0;
+	text-align: left;
+	display:table-cell;
+	vertical-align: bottom;
+	font-size: 22px;
+	border-bottom: solid 1px #c9caca;
+}
+
+.day_calender_plugin{
+	width: 420px;
+	padding: 0;
+	margin: 10px 0 0 0;
+	color: #727171;
+}
+
+#day_span {
+	width: 350px;
+
+	margin: 0 auto;
+	/*right: 530px;*/
+	background-color: #f7f8f8;
+	display: inline-block;
+	color: #000;
+}
+
+.day_span_title {
+	width: 350px;
+	height: 50px;
+	padding: 0;
+	margin: 0;
+	text-align: left;
+	display:table-cell;
+	vertical-align: bottom;
+	font-size: 22px;
+	border-bottom: solid 1px #c9caca;
+}
+
+.day_span_plugin {
+	width: 350px;
+	padding: 0;
+	margin: 10px 0 0 0;
+	color: #727171;
+}
+
+#datepicker {
+	width: 100px;
+	padding: 0;
+	margin: 10px 0 0 0;
+}
+
+.close_dayarea {
+	display:none;
+}
+
+.open_dayarea {
+	display:block;
+}
+
+#datepicker1 {
+	font-size: 17px;
+	width: 150px;
+	text-align: center;
+	margin-top: 30px;
+}
+
+#datepicker2 {
+	font-size: 17px;
+	width: 150px;
+	text-align: center;
+	float: right;
+	margin-top: 30px;
+}
+
+.span_clear_area{
+	width: 350px;
+	text-align: right;
+	display: block;
+	padding-top: 150px;
+}
+
+#span_clear{
+	width: 100px;
+	display: inline;
+	cursor: pointer;
+}
+
+.span_search_area{
+	width: 350px;
+	text-align: right;
+	display: block;
+	padding-top: 50px;
+}
+
+#span_search{
+	width: 190px;
+	display: inline;
+	cursor: pointer;
+}

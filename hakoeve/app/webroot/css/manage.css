@@ -1,0 +1,29 @@
+.manage_view {
+	width: 950px;
+	margin: 0px auto;
+}
+
+div.view {
+	margin-left: auto;
+	width: 690px;
+	margin-top: 30px;
+	font-size: 15px;
+}
+
+.manage_tittle {
+	color: #ff5514;
+	font-size: 29px;
+	color: #FF5514;
+	border-bottom: 1px solid black;
+}
+
+.sub_tittle{
+	font-size: 22px;
+	text-align: left;
+	border-bottom: 1px solid black;	
+}
+
+.tr_color td {
+	background-color: #ffffff;
+	border-top: 1px dotted black;
+}

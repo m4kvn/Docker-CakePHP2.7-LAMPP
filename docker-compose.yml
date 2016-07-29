@@ -1,0 +1,6 @@
+xampp:
+    build: ./xampp/
+    volumes:
+        - "./hakoeve:/opt/lampp/htdocs/hakoeve"
+    ports:
+        - "80:80"

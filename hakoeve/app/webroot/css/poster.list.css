@@ -1,0 +1,211 @@
+div#poster_List{
+	margin: 0px 10px;
+	width: 930px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+
+div#poster_list_title{
+	width: 850px;
+	margin: 0px auto 10px;
+	border-bottom: solid 1px #000;
+	font-size: 22px;
+	font-weight: bold;
+}
+
+div#poster_list_subtitle{
+	width: 850px;
+	margin: 0px auto 20px;
+	font-size: 13px;
+	font-weight: normal;
+
+}
+
+div#poster_list_area{
+	background-color: #f7f8f8;
+	width: 100%;
+	height: auto;
+	border: solid 1px #727171;
+}
+
+div#poster_list_submenu{
+	width: 100%;
+	height: 50px;
+	border-bottom: solid 1px #727171;
+}
+
+div#poster_list_submenu_sort_area{
+	margin: auto auto auto 40px;
+	height: auto;
+	width: 400px;
+	float: left;
+	font-size: 17px;
+}
+
+
+div#poster_list_submenu_sort_text{
+	float: left;
+	width: 80px;
+	height: 100%;
+}
+
+select#poster_list_submenu_sort{
+/*	float: left;*/
+	margin-top: 8px;
+	width: 200px;
+	height: auto;
+	vertical-align: baseline;
+}
+
+label#sort_label{
+	margin-bottom: 5px;
+}
+
+.past_checkbox{
+	width: 220px;
+	height: 50px;
+	float: right;
+}
+
+label#past_text{
+	width: 190px;
+	padding-top: 15px;
+}
+
+div#poster_list_image_area{
+	background-color: #c9caca;
+	width: 100%;
+	height: auto;
+}
+
+div#poster_list_image_1{
+
+	height: auto;
+	padding: 5px 5px 2px;
+}
+
+div#poster_list_image_2{
+
+	height: auto;
+	padding: 2px 5px 2px;
+}
+
+div#poster_list_image_3{
+
+	height: auto;
+	padding: 2px 5px 5px;
+}
+
+div#poster_list_more_area{
+	width: 100%;
+	height: 50px;
+	background-color: #c9caca;
+}
+
+div#poster_list_more_button{
+	width: 200px;
+	height: auto;
+	margin: auto;
+	background-color: #fff;
+	border: ridge 3px #000;
+	text-align: CENTER;
+	font-size: 17px;
+	color: #000;
+	cursor: pointer;
+}
+
+.GITheWall li{
+	display: inline-block;
+	width: 130px;
+	height: auto;
+	margin: 10px;
+	padding: 0;
+	cursor: pointer;
+}
+
+.GITheWall img{
+	width: 130px;
+	height: auto;
+}
+
+.GI_TW_fullimg img{
+	height: 550px;
+	width: auto;
+}
+
+.ajax {
+	margin: 30px 0;
+}
+
+.ajax .img{
+	display: inline-block;
+	float: left;
+	width: 30%;
+	margin-bottom: 10px;
+}
+
+.ajax .img img{
+	width: 100%;
+
+}
+
+.ajax .detail{
+	float: left;
+	width: 65%;
+	padding-left: 5%;
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+.ajax .title{
+	color: black;
+	font-size: 29px;
+	padding-left: 30px;
+	border-bottom: 1px solid #9fa0a0;
+	padding-bottom: 5px;
+}
+
+.ajax .date{
+	font-size: 17px;
+	padding: 10px;
+}
+
+.ajax #detail_link{
+	float: right;
+	cursor: pointer;
+	width: 90px;
+}
+
+.ajax .event_view{
+	display: inline-block;
+	text-align: right;
+	width: 100%;
+	border-bottom: 1px dotted black;
+}
+
+.ajax td{
+	padding-left: 30px;
+}
+
+.ajax .recommend{
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.ajax .recommend_img{
+	width: 100%;
+	margin: 10px 0;
+}
+
+.ajax .recommend_space{
+	vertical-align: top;
+}
+
+.recommend_space img{
+	width: 30%;
+	vertical-align: top;
+}
+
+#inner{
+	width: 950px;
+}

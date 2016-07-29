@@ -1,0 +1,23 @@
+.login {
+	width: 270px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.logout {
+	width: 250px;
+	margin: 0 auto 217.9px;
+	text-align: center;
+}
+
+.add {
+	width: 250px;
+	margin: 0 auto 33.5px;
+	text-align: center;
+}
+
+.forgot {
+	width: 250px;
+	margin: 0 auto 33.5px;
+	text-align: center;
+}
