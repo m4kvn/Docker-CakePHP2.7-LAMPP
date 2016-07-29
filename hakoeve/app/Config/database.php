@@ -59,7 +59,7 @@ class DATABASE_CONFIG {
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
 		'host' => 'localhost',
-		'login' => '',
+		'login' => 'root',
 		'password' => '',
 		'database' => 'hakoeve',
 		'prefix' => '',
