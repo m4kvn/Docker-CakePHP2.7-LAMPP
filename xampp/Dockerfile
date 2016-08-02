@@ -48,6 +48,8 @@ RUN echo '/usr/bin/supervisord -n' >> /startup.sh
 
 # cron install & setting
 RUN apt-get install -y cron
-RUN echo "0 0 * * * root /root/backupmysql.sh" > /etc/cron.d/backupmysql
+RUN mkdir -P /root/mysql/backup
+COPY [ './backupmysql.sh', '/root/backupmysql.sh' ]
+RUN echo '0 0 * * * root /root/backupmysql.sh' > /etc/cron.d/backupmysql
 
 CMD ["sh", "/startup.sh"]
