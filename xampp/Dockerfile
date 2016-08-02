@@ -46,4 +46,8 @@ EXPOSE 80
 RUN echo '/opt/lampp/lampp start' >> /startup.sh
 RUN echo '/usr/bin/supervisord -n' >> /startup.sh
 
+# cron install & setting
+RUN apt-get install -y cron
+RUN echo "0 0 * * * root /root/backupmysql.sh" > /etc/cron.d/backupmysql
+
 CMD ["sh", "/startup.sh"]
