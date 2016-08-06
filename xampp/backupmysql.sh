@@ -1,8 +1,5 @@
 #!/bin/sh
 
-# バックアップの保存期間（days）
-period=3
-
 # バックアップ保存用ディレクトリの指定
 dirpath='/root/mysql/backup'
 
@@ -14,7 +11,3 @@ filename=`date +%y%m%d`
 
 # パーミッション変更
 chmod 700 $dirpath/$filename.sql
-
-# 保存期間を過ぎたバックアップを削除
-oldfile=`date --date "$period days ago" +%y%m%d`
-rm -f $dirpath/$oldfile.sql
