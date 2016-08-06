@@ -4,7 +4,7 @@
 dirpath='/root/mysql/backup'
 
 # ファイル名を指定する(※ファイル名で日付がわかるようにしておきます)
-filename=`date +%y%m%d`
+filename=`date +%y%m%d-%H%M%S`
 
 # 指定したDBのスキーマおよびデータをすべて吐き出す
 /opt/lampp/bin/mysqldump --user root hakoeve > $dirpath/$filename.sql
