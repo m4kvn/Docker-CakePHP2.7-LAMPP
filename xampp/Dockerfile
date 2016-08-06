@@ -45,12 +45,16 @@ EXPOSE 80
 # 起動用スクリプトをコピー
 COPY [ "./startup.sh", "/startup.sh" ]
 
-# cron install & setting
-# RUN apt-get install -y cron
+# バックアップ用フォルダの作成
+# バックアップ用スクリプトの追加
 RUN mkdir -p /root/mysql/backup
 COPY [ "./backupmysql.sh", "/root/backupmysql.sh" ]
 RUN chmod +x /root/backupmysql.sh
-# RUN echo '0 0 * * * root /root/backupmysql.sh' > /etc/cron.d/backupmysql
+
+# cronのインストール
+# cronの設定
+RUN apt-get install -y cron
+RUN echo '0 0 * * * root /root/backupmysql.sh' > /etc/cron.d/backupmysql
 
 ENTRYPOINT [ "sh" ]
 CMD [ "/startup.sh" ]
