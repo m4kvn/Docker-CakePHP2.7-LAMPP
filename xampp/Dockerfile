@@ -42,8 +42,19 @@ EXPOSE 3306
 EXPOSE 22
 EXPOSE 80
 
-# write a startup script
-RUN echo '/opt/lampp/lampp start' >> /startup.sh
-RUN echo '/usr/bin/supervisord -n' >> /startup.sh
+# 起動用スクリプトをコピー
+COPY [ "./startup.sh", "/startup.sh" ]
 
-CMD ["sh", "/startup.sh"]
+# バックアップ用フォルダの作成
+# バックアップ用スクリプトの追加
+RUN mkdir -p /root/mysql/backup
+COPY [ "./backupmysql.sh", "/root/backupmysql.sh" ]
+RUN chmod +x /root/backupmysql.sh
+
+# cronのインストール
+# cronの設定
+RUN apt-get install -y cron
+RUN echo '0 0 * * * root /root/backupmysql.sh' > /etc/cron.d/backupmysql
+
+ENTRYPOINT [ "sh" ]
+CMD [ "/startup.sh" ]

@@ -2,6 +2,6 @@ xampp:
     build: ./xampp/
     volumes:
         - "./hakoeve:/opt/lampp/htdocs/hakoeve"
-        # - "./data/mysql:/opt/lampp/var/mysql"
+        - "./data/mysql/backup:/root/mysql/backup"
     ports:
         - "80:80"
