@@ -10,7 +10,7 @@ dirpath='/root/mysql/backup'
 filename=`date +%y%m%d`
 
 # 指定したDBのスキーマおよびデータをすべて吐き出す
-mysqldump -u[root] -h[localhost] [hakoeve] > $dirpath/$filename.sql
+/opt/lampp/bin/mysqldump --user root hakoeve > $dirpath/$filename.sql
 
 # パーミッション変更
 chmod 700 $dirpath/$filename.sql
