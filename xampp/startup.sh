@@ -1,8 +1,5 @@
 #!/bin/sh
 
-/opt/lampp/lampp start
-echo "create database hakoeve " | /opt/lampp/bin/mysql -u root
-
 trap_TERM() {
     echo 'SIGTERM ACCEPTED.'
     MSG=`/root/backupmysql.sh`
@@ -11,6 +8,8 @@ trap_TERM() {
 }
 
 trap 'trap_TERM' TERM
+
+/opt/lampp/lampp start
 
 while :
 do
