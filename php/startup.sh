@@ -2,6 +2,18 @@
 
 service mysql start
 
-echo "create database hakoeve" | mysql -u root
+trap_TERM() {
+    echo 'SIGTERM ACCEPTED.'
+    MSG=`/root/backupmysql.sh`
+    echo $MSG
+    exit 0
+}
 
-apache2-foreground
+trap 'trap_TERM' TERM
+
+apache2-foreground&
+
+while :
+do
+    sleep 5
+done

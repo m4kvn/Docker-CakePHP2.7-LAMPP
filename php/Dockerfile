@@ -23,6 +23,17 @@ ADD [ "phpmyadmin_install.exp", "/phpmyadmin_install.exp" ]
 RUN expect /phpmyadmin_install.exp
 ADD [ "config.inc.php", "/etc/phpmyadmin/config.inc.php" ]
 
+# バックアップ用フォルダの作成
+# バックアップ用スクリプトの追加
+RUN mkdir -p /root/mysql/backup
+COPY [ "./backupmysql.sh", "/root/backupmysql.sh" ]
+RUN chmod +x /root/backupmysql.sh
+
+# cronのインストール
+# cronの設定
+RUN apt-get install -y cron
+RUN echo '0 0 * * * root /root/backupmysql.sh' > /etc/cron.d/backupmysql
+
 ADD [ "startup.sh", "/startup.sh" ]
 RUN chmod +x /startup.sh
 ENTRYPOINT [ "/startup.sh" ]

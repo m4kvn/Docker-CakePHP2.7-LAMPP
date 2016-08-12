@@ -4,3 +4,4 @@ php:
     - "80:80"
   volumes:
     - "./html:/var/www/html"
+    - "./data/mysql/backup:/root/mysql/backup"
