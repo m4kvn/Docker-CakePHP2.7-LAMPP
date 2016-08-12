@@ -1,5 +1,5 @@
-php:
-  build: ./php/
+lamp:
+  build: ./lamp/
   ports:
     - "80:80"
   volumes:
