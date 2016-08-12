@@ -1,0 +1,12 @@
+#!/usr/bin/expect
+
+set timeout 600
+
+spawn apt-get install -y mariadb-server
+
+expect {
+    -glob "New password for the MariaDB \"root\" user:" {
+        send "\n"
+        exp_continue
+    }
+}

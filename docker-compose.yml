@@ -4,17 +4,3 @@ php:
     - "80:80"
   volumes:
     - "./html:/var/www/html"
-  links:
-    - mariadb:db
-
-mariadb:
-  image: mariadb:10.1
-  environment:
-    - MYSQL_ALLOW_EMPTY_PASSWORD=true
-
-phpmyadmin:
-  image: phpmyadmin/phpmyadmin:4.6.3-3
-  ports:
-    - "8080:80"
-  links:
-    - mariadb:db
