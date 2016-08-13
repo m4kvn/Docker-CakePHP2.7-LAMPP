@@ -1,5 +1,5 @@
-lamp:
-  build: ./lamp/
+lampp:
+  build: ./lampp/
   ports:
     - "80:80"
   volumes:
