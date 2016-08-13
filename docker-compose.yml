@@ -1,7 +1,13 @@
-xampp:
-  image: hakoeve/xampp
-  volumes:
-    - "./hakoeve:/opt/lampp/htdocs/hakoeve"
-    - "./data/mysql/backup:/root/mysql/backup"
+lamp:
+  build: ./lamp/
   ports:
     - "80:80"
+  volumes:
+    - "./html:/var/www/html"
+    - "./data/mysql/backup:/root/mysql/backup"
+  volumes_from:
+    - data
+data:
+  image: busybox:1
+  volumes:
+    - "./data/busybox/mysql:/var/lib/mysql"
