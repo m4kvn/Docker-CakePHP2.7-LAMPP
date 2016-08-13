@@ -1,10 +1,11 @@
 # 構築手順
 
-HakoEve の WEB 開発環境を「Immutable Infrastructure（不変のインフラ）」化させるために、Docker を用いた XAMPP 環境を構築する。
+HakoEve の WEB 開発環境を Docker を用いた LAMPP 環境で構築する
 
 ## 前提
 
 Docker を動かす環境は各自構築する必要がある
+
 リンク先にインストール方法が記述されている
 
 1. [Docker for Mac](https://docs.docker.com/docker-for-mac/) をインストール
