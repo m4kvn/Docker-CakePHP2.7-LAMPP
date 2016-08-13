@@ -1,0 +1,36 @@
+#!/usr/bin/expect
+
+set timeout 600
+
+spawn apt-get install -y phpmyadmin
+
+expect {
+    -glob "Web server to reconfigure automatically:" {
+        send "1\n"
+        exp_continue
+    }
+    -glob "Configure database for phpmyadmin with dbconfig-common?" {
+        send "no\n"
+        exp_continue
+    }
+    -glob "php5.load (Y/I/N/O/D/Z)" {
+        send "N\n"
+        exp_continue
+    }
+    -glob "Password of the database's administrative user:" {
+        send "\n"
+        exp_continue
+    }
+    -glob "MySQL application password for phpmyadmin:" {
+        send "\n"
+        exp_continue
+    }
+    -glob "What do you want to do about modified configuration file php.ini?" {
+        send "2\n"
+        exp_continue
+    }
+    -glob "Next step for database installation:" {
+        send "1\n"
+        exp_continue
+    }
+}
