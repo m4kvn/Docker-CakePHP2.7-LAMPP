@@ -1,13 +1,16 @@
 #!/bin/sh
 
-# バックアップ保存用ディレクトリの指定
+# バックアップ用ディレクトリの指定
 dirpath='/root/mysql/backup'
 
-# ファイル名を指定する(※ファイル名で日付がわかるようにしておきます)
+# ファイル名を指定
 filename=`date +%y%m%d-%H%M%S`
 
-# 指定したDBのスキーマおよびデータをすべて吐き出す
+# データベースのバックアップ
 mysqldump --user root hakoeve > $dirpath/$filename.sql
 
-# パーミッション変更
+# パーミッションを変更
 chmod 700 $dirpath/$filename.sql
+
+# 30日以上前のバックアップを削除
+find /root/mysql/backup -mtime +30 -exec rm -f {} \;
